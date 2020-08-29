@@ -34,7 +34,7 @@ if (!keyObjectSupported) {
   return
 }
 
-const { createPrivateKey, createPublicKey } = require('crypto')
+const { createPrivateKey, createPublicKey } = require('../../lib/Crypto')
 const { hasProperty, hasNoProperties, hasProperties } = require('../macros')
 
 const OKPKey = require('../../lib/jwk/key/okp')

@@ -2,7 +2,7 @@ const test = require('ava')
 
 if (!('electron' in process.versions)) return
 
-const crypto = require('crypto')
+const crypto = require('../../lib/Crypto')
 
 const fixtures = require('../fixtures')
 

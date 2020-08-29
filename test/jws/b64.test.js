@@ -1,6 +1,6 @@
 const test = require('ava')
 
-const { randomBytes } = require('crypto')
+const { randomBytes } = require('../../lib/Crypto')
 const { JWK, JWS, errors } = require('../..')
 
 const k = JWK.asKey({

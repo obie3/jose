@@ -1,6 +1,6 @@
 const test = require('ava')
 
-const crypto = require('crypto')
+const crypto = require('../../lib/Crypto')
 
 const { edDSASupported, keyObjectSupported } = require('../../lib/help/runtime_support')
 

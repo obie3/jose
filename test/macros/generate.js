@@ -1,4 +1,4 @@
-const { generateKeyPairSync } = require('crypto')
+const { generateKeyPairSync } = require('../../lib/Crypto')
 
 const { keyObjectSupported } = require('../../lib/help/runtime_support')
 const { createPublicKey, createPrivateKey } = require('../../lib/help/key_object')

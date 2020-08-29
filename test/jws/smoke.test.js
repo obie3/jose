@@ -1,6 +1,6 @@
 const test = require('ava')
 
-const { randomBytes } = require('crypto')
+const { randomBytes } = require('../../lib/Crypto')
 
 const { edDSASupported, keyObjectSupported } = require('../../lib/help/runtime_support')
 const { JWK: { asKey, generateSync } } = require('../..')

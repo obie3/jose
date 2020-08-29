@@ -1,6 +1,6 @@
 const test = require('ava')
 
-const { createSecretKey, generateKeyPairSync } = require('crypto')
+const { createSecretKey, generateKeyPairSync } = require('../../lib/Crypto')
 
 const { keyObjectSupported } = require('../../lib/help/runtime_support')
 const errors = require('../../lib/errors')
