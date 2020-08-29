@@ -1,4 +1,4 @@
-//const { inflateRawSync } = require('zlib')
+const { inflateRawSync } = require('zlib')
 
 const base64url = require('../help/base64url')
 const getKey = require('../help/get_key')
@@ -165,7 +165,7 @@ const jweDecrypt = (skipValidateHeaders, serialization, jwe, key, { crit = [], c
     let cleartext = decrypt(enc, cek, base64url.decodeToBuffer(ciphertext), { iv, tag, aad: adata })
 
     if (opts.zip) {
-      //cleartext = inflateRawSync(cleartext)
+      cleartext = inflateRawSync(cleartext)
     }
 
     if (complete) {

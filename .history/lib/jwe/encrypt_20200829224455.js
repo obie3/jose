@@ -1,4 +1,4 @@
-//const { deflateRawSync } = require('zlib')
+const { deflateRawSync } = require('zlib')
 
 const { KEYOBJECT } = require('../help/consts')
 const generateIV = require('../help/generate_iv')

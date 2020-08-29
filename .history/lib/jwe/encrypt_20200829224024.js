@@ -1,4 +1,4 @@
-//const { deflateRawSync } = require('zlib')
+const { deflateRawSync } = require('zlib')
 
 const { KEYOBJECT } = require('../help/consts')
 const generateIV = require('../help/generate_iv')
@@ -201,7 +201,7 @@ class Encrypt {
 
     let cleartext = this._cleartext
     if (this._protected && 'zip' in this._protected) {
-      //cleartext = deflateRawSync(cleartext)
+      cleartext = deflateRawSync(cleartext)
     }
 
     const { ciphertext, tag } = encrypt(enc, this._cek, cleartext, { iv, aad })
