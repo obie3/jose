@@ -150,3 +150,5 @@ dist
 
 # TS test
 types/*.js
+
+.history
